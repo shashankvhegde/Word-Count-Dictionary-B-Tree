@@ -190,7 +190,7 @@ boolean Insertion(Treeentry *midentry,Treenode **right,Treenode *root,Treeentry 
 	/*Recursively inserts entry in root node.
 	 *midentry is the median entry which might come above from the next insertion call (on the child of root) into the root for insertion
 	 *right pointer is the pointer to the new node formed if split took place in the next subtree(in the subsequent recursive call)
-	 * Returns TRUE if a midentry is coming from the next subtree else returns FALSE.
+	 *Returns TRUE if a midentry is coming from the next subtree else returns FALSE.
 	 */
 	
 	boolean retval = FALSE;
@@ -294,7 +294,6 @@ void fromleft(Treenode *prev,Treenode *root,int p){
 	
 	root->count += 1;
 	left->count -= 1;
-	//printf("fromleft done\n");
 	
 }
 
@@ -369,7 +368,6 @@ void restore(Treenode **root,Treenode *prev,int p){
 			free(temp);
 		}
 	}//This is the case when the children of root are merged and the root has no entry left in which case the root is changed.
-	//printf("restore done\n");
 }
 
 void delete_from_node(Treenode *root,int pos){
