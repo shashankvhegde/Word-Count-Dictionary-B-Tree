@@ -1,0 +1,5 @@
+	computer	2
+	dictionary	1
+	hello	1
+	science	1
+	world	1
