@@ -103,7 +103,7 @@ boolean search(Treenode *root,Key_type key[],int *pos){
 		low = 0;
 		high = l-1;
 		while(low <= high && found == FALSE){
-			mid = (low + high)/2;
+			mid = low + (high-low)/2;
 			if(compare(key,root->entry[mid].key) < 0){
 				high = mid - 1;
 			}
